@@ -17,7 +17,7 @@ main() {
     rm ./jq
 
     echo -n "Installing Latest Roblox... "
-    [ -d "/Applications/Roblox.app" ] && rm -rf "/Applications/Roblox.app"
+    [ -d "/Users/USERHERE/Desktop/Roblox.app" ] && rm -rf "/Users/USERHERE/Desktop/Roblox.app"
     unzip -o -q "./RobloxPlayer.zip"
     mv ./RobloxPlayer.app /Applications/Roblox.app
     rm ./RobloxPlayer.zip
@@ -35,14 +35,14 @@ main() {
     echo -e " Done."
 
     echo -e "Patching Roblox..."
-    mv ./macsploit.dylib "/Applications/Roblox.app/Contents/MacOS/macsploit.dylib"
-    ./insert_dylib "/Applications/Roblox.app/Contents/MacOS/macsploit.dylib" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
-    mv "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
+    mv ./macsploit.dylib "/Users/USERHERE/Desktop/Roblox.app/Contents/MacOS/macsploit.dylib"
+    ./insert_dylib "/Users/USERHERE/Desktop/Roblox.app/Contents/MacOS/macsploit.dylib" "/Users/USERHERE/Desktop/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
+    mv "/Users/USERHERE/Desktop/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Users/USERHERE/Desktop/Roblox.app/Contents/MacOS/RobloxPlayer"
     rm ./insert_dylib
 
     echo -n "Installing MacSploit App... "
-    [ -d "/Applications/MacSploit.app" ] && rm -rf "/Applications/MacSploit.app"
-    mv ./MacSploit.app /Applications/MacSploit.app
+    [ -d "/Users/USERHERE/Desktop/MacSploit.app" ] && rm -rf "/Users/USERHERE/Desktop/MacSploit.app"
+    mv ./MacSploit.app /Users/USERHERE/Desktop/MacSploit.app
     rm ./MacSploit.zip
     echo -e "Done."
 
